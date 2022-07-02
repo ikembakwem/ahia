@@ -8,7 +8,7 @@ require("dotenv").config();
 const db = require("../config/db");
 
 // JSON products files
-const products = require("../data/product.json");
+const products = require("../data/products.json");
 
 const PORT = process.env.PORT;
 const DB_HOST = process.env.DB_HOST;
