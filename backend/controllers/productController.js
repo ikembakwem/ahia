@@ -23,7 +23,7 @@ exports.getProducts = async (req, res, next) => {
 };
 
 // Get specific product by it's id => api/v1/product/:id
-exports.getProductByID = async (req, res, next) => {
+exports.getProduct = async (req, res, next) => {
   try {
     const product = await Product.findById(req.params.id);
 
@@ -39,4 +39,40 @@ exports.getProductByID = async (req, res, next) => {
       message: "Product doeas not exist!",
     });
   }
+};
+
+exports.updateProduct = async (req, res, next) => {
+  let product = await Product.findById(req.params.id);
+  if (!product) {
+    return res.status(404).json({
+      success: true,
+      message: "Product you are trying to update does not exist",
+    });
+  }
+
+  product = await Product.findByIdAndUpdate(req.params.id, req.body, {
+    new: true,
+    runValidators: true,
+  });
+
+  res.status(200).json({
+    success: true,
+    product,
+  });
+};
+
+exports.deleteProduct = async (req, res, next) => {
+  const product = await Product.findById(req.params.id);
+  if (!product) {
+    return res.status(404).json({
+      success: true,
+      message: "Product you are trying to delete does not exist",
+    });
+  }
+
+  await product.remove();
+  res.status(200).json({
+    success: true,
+    message: "Product deleted successfully",
+  });
 };
