@@ -49,8 +49,49 @@ const productSchema = new mongoose.Schema({
         "Collectibles",
         "Sports",
         "Home and Garden",
+        "Smartphones",
       ],
+      message: "Please select the correct category for the product",
     },
+  },
+
+  seller: {
+    type: String,
+    required: [true, "Enter seller information"],
+  },
+
+  stock: {
+    type: String,
+    required: [true, "Enter product stock"],
+    maxLength: [4, "Stock cannot exceed 9999"],
+    default: 0,
+  },
+
+  numberOfReviews: {
+    type: Number,
+    default: 0,
+  },
+
+  reviews: [
+    {
+      name: {
+        type: String,
+        required: true,
+      },
+      rating: {
+        type: Number,
+        required: true,
+      },
+      comment: {
+        type: String,
+        required: true,
+      },
+    },
+  ],
+
+  createdAt: {
+    type: Date,
+    default: Date.now(),
   },
 });
 

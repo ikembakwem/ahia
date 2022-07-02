@@ -1,0 +1,104 @@
+[
+  {
+    "name": "LG Home Theatre",
+    "price": "889.99",
+    "description": "An amazing sound system from LG",
+    "ratings": "4.5",
+    "images": [
+      {
+        "public_id": "dhfdyulbbdfv3n",
+        "url": "https://facebook.com"
+      }
+    ],
+    "category": "Electronics",
+    "seller": "Ikechukwu",
+    "stock": "200",
+    "numberOfReview": "45",
+    "reviews": []
+  },
+  {
+    "name": "Sony LED 32 inch TV",
+    "price": "449.99",
+    "description": "An amazing LED TV from Sony",
+    "ratings": "4.5",
+    "images": [
+      {
+        "public_id": "dhfdyulbbdfv3n",
+        "url": "https://facebook.com"
+      }
+    ],
+    "category": "Electronics",
+    "seller": "Ikechukwu",
+    "stock": "89",
+    "numberOfReview": "45",
+    "reviews": []
+  },
+  {
+    "name": "iPhone 13 Pro",
+    "price": "1299.99",
+    "description": "iPhone 13 Pro black, running on the latest iOs",
+    "ratings": "4.7",
+    "images": [
+      {
+        "public_id": "dhfdyulbbdfv3n",
+        "url": "https://facebook.com"
+      }
+    ],
+    "category": "Smartphones",
+    "seller": "Ikechukwu",
+    "stock": "440",
+    "numberOfReview": "45",
+    "reviews": []
+  },
+  {
+    "name": "Tommy Hilfiger T-Shirt",
+    "price": "50.99",
+    "description": "White and black stripes Tommy T-Shirt",
+    "ratings": "4.3",
+    "images": [
+      {
+        "public_id": "dhfdyulbbdfv3n",
+        "url": "https://facebook.com"
+      }
+    ],
+    "category": "Fashion",
+    "seller": "Ikechukwu",
+    "stock": "30",
+    "numberOfReview": "45",
+    "reviews": []
+  },
+  {
+    "name": "Samsung S22 Ultra",
+    "price": "1099.99",
+    "description": "Samsung S22 with the latest OneUI display system",
+    "ratings": "4.9",
+    "images": [
+      {
+        "public_id": "dhfdyulbbdfv3n",
+        "url": "https://facebook.com"
+      }
+    ],
+    "category": "Smartphones",
+    "seller": "Ikechukwu",
+    "stock": "40",
+    "numberOfReview": "45",
+    "reviews": []
+  },
+  {
+    "name": "Dri-Fit Shortsleeve T-shirt",
+    "price": "79.99",
+    "description": "Dri-Fit Shortsleeves T-shirt for workouts and running",
+    "ratings": "4.7",
+    "images": [
+      {
+        "public_id": "dhfdyulbbdfv3n",
+        "url": "https://facebook.com"
+      }
+    ],
+    "category": "Sports",
+    "seller": "Ikechukwu",
+    "stock": "440",
+    "numberOfReview": "45",
+    "reviews": []
+  }
+]
